@@ -9,7 +9,7 @@ import django_elastipymemcache
 
 setup(
     name="django-elastipymemcache",
-    version=django_elastipymemcache.__version__,
+    version="0.0.1",
     description="Django cache backend for Amazon ElastiCache (memcached)",
     keywords="elasticache amazon cache pymemcache memcached aws",
     author="HarikiTech",
