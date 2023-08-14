@@ -17,8 +17,6 @@ class ConfigurationEndpointClient(Client):
         return client
 
     def _get_cluster_info_cmd(self):
-        if StrictVersion(smart_str(self.version())) < StrictVersion("1.4.14"):
-            return b"get AmazonElastiCache:cluster\r\n"
         return b"config get cluster\r\n"
 
     def _extract_cluster_info(self, line):
